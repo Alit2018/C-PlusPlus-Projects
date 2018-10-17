@@ -1,0 +1,38 @@
+//Recursive fucntion to find factorial
+// Recursive call function
+// Stop Condition
+// In recursive function leads to a stop condition
+
+#include <iostream>
+#include<cmath>
+
+int factorial(int x);
+
+int main (){
+    int x;
+    std::cout<<"Enter a number to see the factorial: " <<std::endl;
+    std::cin >> x;
+    std::cout<<"Factorial of "<< x << " is " << factorial(x);
+}
+///////
+    int factorial (int x) {
+        if (x==1 ||x==0){
+            return 1;
+        }
+        else {
+            return x * factorial(x-1);
+        }
+    }
+
+////////
+
+     
+/*
+ int factorial(int x){
+        x=5;
+            if(x==1)
+                return 1;
+            return x*factorial(x-1);
+        }
+*/
+
