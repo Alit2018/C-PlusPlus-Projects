@@ -1,0 +1,14 @@
+#include <iostream>
+#include<iomanip>
+
+int main(int argc, const char * argv[]) {
+   
+  auto N=0.0;
+    std::cout<<"input a number: ";
+    std::cin>> N;
+    
+    std::cout << std::fixed << std::setprecision(9)<<"Your number is "<<N<<"!"<<std::endl;
+    std::cout << std::setprecision(9)<<"Your number is "<<N<<"!"<<std::endl;
+    
+    return 0;
+}
