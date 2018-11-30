@@ -1,0 +1,25 @@
+//Given a file called “input.txt,” which you can trust exists, which contains the
+//names of people in a class, write a program to print the names of the people in the latter
+//half of the file. (Note, you are not told how many people are in the file).
+
+
+#include<cstdlib>
+#include<iostream>
+using namespace std;
+int main(void) {
+    ifstream in("input.txt");
+    int i=0;
+    string s;
+    while(getline(in,s)){
+        i++;
+    }
+    in.close()
+    ifstream in("input.txt");
+    int j=0;
+    while (getline(in,s)){
+        if(j>i/2)cout<<s<<endl;
+        j++;
+    }
+    in.close();
+    return 0;
+}
